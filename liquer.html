@@ -1,0 +1,424 @@
+<html>
+    <head>
+       <style>
+           header{
+               color:black;
+               background-image: url(https://stmed.net/sites/default/files/styles/1024x768/public/corona-wallpapers-30657-5392175.jpg?itok=fiUUJXlJ);
+               text-align:center;
+               font-size:30px;
+               font-family:'Courier New', Courier, monospace;
+           }
+           
+           body{
+               background-image: url(https://cdn.inspirationhut.net/wp-content/uploads/2013/05/201.png);
+           }
+
+           .imagediv{
+               text-align:center;              
+               padding-top:20px;
+               grid-gap:10px;
+               display:grid;
+               grid-template-columns:1fr 1fr ;
+               grid-template-rows:1fr 1fr 1fr;
+               grid-template-areas:
+               'im1 im2'
+               'im3 im4'
+               'im5 im6';
+           }
+           #im1{
+               grid-area:"im1";
+           }
+           #im2{
+               grid-area:"im2";
+           }
+           #im3{
+               grid-area:"im3";
+           }
+           #im4{
+               grid-area:"im4";
+           }
+           #im5{
+               grid-area:"im5";
+           }
+           #im6{
+               grid-area:"im6";
+           }
+
+           .maindiv{
+               padding-top:20px;
+               grid-gap:10px;
+               display:grid;
+               grid-template-columns:1fr ;
+               grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+               grid-template-areas:
+               'div1'
+               'div2'
+               'div3'
+               'div4'
+               'div5'
+               'div6'
+               'div7'
+               'div8'
+               'div9'
+               'div10'
+               'div11'
+               'div12';
+           }
+           #div1{
+            text-align: center;
+             grid-area: "div1";
+           }
+           #div2{
+               padding-top:60px;
+            text-align: center;
+               grid-area:"div2";
+           }
+           #div3{
+            text-align: center;
+             grid-area: "div3";
+           }
+           #div4{
+            padding-top:60px;
+            text-align: center;
+               grid-area:"div4";
+           }
+           #div5{
+            text-align: center;
+             grid-area: "div5";
+           }
+           #div6{
+            padding-top:60px;
+            text-align: center;
+               grid-area:"div6";
+           }
+           #div7{
+            text-align: center;
+             grid-area: "div7";
+           }
+           #div8{
+            padding-top:60px;
+            text-align: center;
+               grid-area:"div8";
+           }
+           #div9{
+            text-align: center;
+             grid-area: "div9";
+           }
+           #div10{
+            padding-top:60px;
+            text-align: center;
+               grid-area:"div10";
+           }
+           #div11{
+            text-align: center;
+             grid-area: "div11";
+           }
+           #div12{
+            padding-top:60px;
+            text-align: center;
+               grid-area:"div12";
+           }
+         
+           h1{
+               color:#3a4660;
+           }
+           p{
+               font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+               color:#3a4660;
+           }
+           
+           .footer{
+               text-align:center;
+               display:grid;
+               grid-template-columns: 1fr ;
+               grid-template-rows:1fr 1fr 1fr;
+               grid-template-areas:
+               'pp'
+               'f1'
+               'soc';
+           }
+#pp{
+    grid-area:"pp";
+}
+#f1{
+    grid-area:"f1";
+}
+#soc{
+    grid-area:"soc";
+}
+#p1{
+    color:olive;
+}
+           footer{
+            color: olive;
+               text-align:right;
+               font-size:15px;
+               font-family:'Courier New', Courier, monospace;
+           }
+           a{
+               text-decoration-line: none;
+               text-decoration:none;
+               color:white;
+           }
+           a:hover{
+               color:olive;
+           }
+
+           #buy{
+               color:olive;
+               text-decoration: none;
+               text-align:center;
+               font-size:20px;
+           }
+           #buy:hover{
+               color:rgb(44, 63, 7);
+           }
+
+           #ty{
+               color:olive;
+               text-align:center;
+           }
+           #bt{
+               font-size:20px;
+               height:23px;
+               width:100px;
+               position: center;
+               color:white;
+               background:black;
+               border:none;
+           }
+           #bt:hover{
+               color:olive;
+               background:transparent;
+               transition:ease-in-out 0.5s all;
+           }
+
+           @media(min-width:600px){
+
+            header{
+               color:black;
+               background-image: url(https://www.deewhyrsl.com.au/wp-content/uploads/2018/02/bottle-shop-hero.jpg);
+               text-align:center;
+               font-size:30px;
+               font-family:'Courier New', Courier, monospace;
+           }
+            .imagediv{
+               text-align:center;              
+               padding-top:20px;
+               grid-gap:10px;
+               display:grid;
+               grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+               grid-template-rows:1fr ;
+               grid-template-areas:
+               'im1 im2 im3 im4 im5 im6';
+           }
+           #im1{
+               grid-area:"im1";
+           }
+           #im2{
+               grid-area:"im2";
+           }
+           #im3{
+               grid-area:"im3";
+           }
+           #im4{
+               grid-area:"im4";
+           }
+           #im5{
+               grid-area:"im5";
+           }
+           #im6{
+               grid-area:"im6";
+           }
+
+           .maindiv{
+               padding-top:20px;
+               grid-gap:10px;
+               display:grid;
+               grid-template-columns:1fr 1fr;
+               grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+               grid-template-areas:
+               'div1 div2'
+               'div3 div4'
+               'div5 div6'
+               'div7 div8'
+               'div9 div10'
+               'div11 div12';
+           }
+           #div1{
+            text-align: center;
+             grid-area: "div1";
+           }
+           #div2{
+               padding-top:60px;
+            text-align: center;
+               grid-area:"div2";
+           }
+           #div3{
+            text-align: center;
+             grid-area: "div3";
+           }
+           #div4{
+            padding-top:60px;
+            text-align: center;
+               grid-area:"div4";
+           }
+           #div5{
+            text-align: center;
+             grid-area: "div5";
+           }
+           #div6{
+            padding-top:60px;
+            text-align: center;
+               grid-area:"div6";
+           }
+           #div7{
+            text-align: center;
+             grid-area: "div7";
+           }
+           #div8{
+            padding-top:60px;
+            text-align: center;
+               grid-area:"div8";
+           }
+           #div9{
+            text-align: center;
+             grid-area: "div9";
+           }
+           #div10{
+            padding-top:60px;
+            text-align: center;
+               grid-area:"div10";
+           }
+           #div11{
+            text-align: center;
+             grid-area: "div11";
+           }
+           #div12{
+            padding-top:60px;
+            text-align: center;
+               grid-area:"div12";
+           }
+
+           .footer{
+               text-align:center;
+               display:grid;
+               grid-template-columns: 1fr 1fr 1fr;
+               grid-template-rows:1fr;
+               grid-template-areas:
+               'pp f1 soc';
+           }
+#pp{
+    grid-area:"pp";
+}
+#f1{
+    grid-area:"f1";
+}
+#soc{
+    grid-area:"soc";
+}
+#p1{
+    color:olive;
+}
+
+           }
+       </style>
+       <title>Liquer</title>
+    </head>
+    <body>
+        <header>Liquer
+        <div class="imagediv">
+            <div id="im1">
+                <img src="https://alchemixingblog.files.wordpress.com/2016/12/bacardi-1862-logo-vector.png?w=150&h=150"></img>
+            </div>
+            <div id="im2">
+                <img src="http://www.giftabottle.co.nz/portals/172/brands/brand-GlenF.png?ver=2015-12-08-145921-453"></img>
+            </div>
+            <div id="im3">
+                <img src="http://www.giftabottle.co.nz/portals/172/brands/brand%20(5).png"></img>
+            </div>
+            <div id="im4">
+                <img src="https://www.bottleshop.co.za/product_images/uploaded_images/jackdaniels.png"></img>
+            </div>
+            <div id="im5">
+                <img src="http://www.giftabottle.co.nz/portals/172/brands/brand%20(4).png"></img>
+            </div>
+            <div id="im6">
+                <img src="https://method3events.files.wordpress.com/2018/10/greygoose_logo_primary-2.png?w=150&h=150"></img>
+            </div>
+        </div>
+    </header>
+        <h1 id="ty">Types of Liquer</h1>
+        <div class="maindiv">
+          <div id="div1">
+              <h1>Gin</h1>
+                <img src="https://cdn.shopify.com/s/files/1/2273/6923/products/Bombay_Sapphire_700ml_300x300.png?v=1504242524" ></img>
+          </div>
+          <div id="div2">
+             <p>Gin is liquor that derives its predominant flavour from juniper berries (Juniperus communis). Gin is one of the broadest categories of spirits, all of various origins, styles, and flavour profiles, that revolve around juniper as a common ingredient.From its earliest origins in the Middle Ages, the drink has evolved from a herbal medicine to an object of commerce in the spirits industry. Gin was developed based on the older Dutch liquor, jenever, and became popular in Great Britain (particularly in London) when William of Orange became King William III of England.
+                Gins come in many flavours and forms, which include Pink Gin, Rhubarb gin, Spiced gin, Violet gin and Blood orange Gin. Gins can be botanical or fruit-flavoured and are commonly mixed with tonic water.</p>
+          </div>
+          <div id="div3">
+              <h1>Rum</h1>
+                <img src="http://www.dfp.com.ph/sites/default/files/styles/product_main/public/Malibu.png?itok=w2le5E6l" ></img>
+          </div>
+          <div id="div4">
+              <p>Rum is a distilled alcoholic drink made from sugarcane byproducts, such as molasses, or directly from sugarcane juice, by a process of fermentation and distillation. The distillate, a clear liquid, is then usually aged in oak barrels. The majority of the world's rum production occurs in the Caribbean and Latin America. Rum is also produced in Australia, Portugal, Austria, Canada, Fiji, India, Japan, Mauritius, Nepal, New Zealand, the Philippines, Reunion Island, South Africa, Spain, Sweden, Taiwan, Thailand, the United Kingdom and the United States.
+                 Rums are produced in various grades. Light rums are commonly used in cocktails, whereas "golden" and "dark" rums were typically consumed straight or neat, on the rocks, or used for cooking, but are now commonly consumed with mixers. Premium rums are also available, made to be consumed either straight or iced.
+                 Rum plays a part in the culture of most islands of the West Indies as well as in The Maritimes and Newfoundland. This drink has famous associations with the Royal Navy (where it was mixed with water or beer to make grog) and piracy (where it was consumed as bumbo). Rum has also served as a popular medium of economic exchange, used to help fund enterprises such as slavery (see Triangular trade), organized crime, and military insurgencies (e.g., the American Revolution and Australia's Rum Rebellion).</p>
+          </div>
+          <div id="div5">
+                <h1>Brandy</h1>
+                  <img src="http://www.dfp.com.ph/sites/default/files/styles/product_main/public/Alfonso%20XIII%201l.png?itok=z1fKtotD" ></img>
+          </div>
+          <div id="div6">
+           <p>Brandy is a spirit produced by distilling wine. Brandy generally contains 35–60% alcohol by volume (70–120 US proof) and is typically drunk as an after-dinner digestif. Some brandies are aged in wooden casks. Others are coloured with caramel colouring to imitate the effect of aging, and some are produced using a combination of both aging and colouring. Varieties of wine brandy can be found across the winemaking world. Among the most renowned are Cognac and Armagnac from southwestern France.
+              In a broader sense, the term brandy also denotes liquors obtained from the distillation of pomace (yielding pomace brandy), or mash or wine of any other fruit (fruit brandy). These products are also called eau de vie (which translates to "water of life").</p>
+         </div>
+         <div id="div7">
+                <h1>Whisky</h1>
+                  <img src="https://cdn.shopify.com/s/files/1/2395/5047/products/deepavali_bundles_3_300x.png?v=1523163576" ></img>
+          </div>
+          <div id="div8">
+           <p>Whisky or whiskey is a type of distilled alcoholic beverage made from fermented grain mash. Various grains (which may be malted) are used for different varieties, including barley, corn, rye, and wheat. Whisky is typically aged in wooden casks, generally made of charred white oak.
+                
+                Whisky is a strictly regulated spirit worldwide with many classes and types. The typical unifying characteristics of the different classes and types are the fermentation of grains, distillation, and aging in wooden barrels.</p></div>
+         <div id="div9">
+                <h1>Tequila</h1>
+                  <img src="https://malawanaholdings.com/wp-content/uploads/2018/07/reposado-300x300.png" ></img>
+          </div>
+          <div id="div10">
+           <p>Tequila is a regional distilled beverage and type of alcoholic drink made from the blue agave plant, primarily in the area surrounding the city of Tequila, 65 km (40 mi) northwest of Guadalajara, and in the Jaliscan Highlands (Los Altos de Jalisco) of the central western Mexican state of Jalisco. Aside from differences in region of origin, tequila is a type of mezcal (and the regions of production of the two drinks are overlapping). The distinction is that tequila must use only blue agave plants rather than any type of agave.Tequila is commonly served neat in Mexico and as a shot with salt and lime across the rest of the world.Tequila contains alcohol (also known formally as ethanol) and is most often made at a 38% alcohol content (76 U.S. proof) for domestic consumption, but can be produced between 31 and 55% alcohol content (62 and 110 U.S. proof). Per U.S. law, tequila must contain at least 40% alcohol (80 U.S. proof) to be sold in the United States.</p></div>
+         <div id="div11">
+                <h1>Vodka</h1>
+                  <img src="https://cdn.shopify.com/s/files/1/2395/5047/products/49e544_470d8fe41c234c4b8e2238c5574512e9_mv2_300x.png?v=1523163617" ></img>
+          </div>
+          <div id="div12">
+           <p>Vodka  is a distilled beverage composed primarily of water and ethanol, but sometimes with traces of impurities and flavorings. Traditionally, vodka is made through the distillation of cereal grains or potatoes that have been fermented, though some modern brands, such as Ciroc, CooranBong, and Bombora, use fruits or sugar.
+              Since the 1890s, the standard Polish, Russian, Belarusian, Czech, Estonian, Hungarian, Icelandic, Latvian, Lithuanian, Norwegian, Slovak, Swedish and Ukrainian vodkas are 40% ABV or alcohol by volume (80 US proof), a percentage widely misattributed to Russian chemist Dmitri Mendeleev. Meanwhile, the European Union has established a minimum of 37.5% ABV for any "European vodka" to be named as such. Products sold as "vodka" in the United States must have a minimum alcohol content of 40%. Even with these loose restrictions, most vodka sold contains 40% ABV.</p>
+         </div>
+        </div>
+        <button id="bt" ><a href="https://www.liquormart.com/">Buy</a></button>
+        <footer>
+            <div class="footer">
+            <div id="pp"><p id="p1">About us<br>Hyderabads Biggest,Best Blog on liquer.</p></div>    
+            <div id="f1"><p id="p1">Contact us via</p>
+                         <ul>
+                             <li>Phone:+1 xxx xxx xxxx</li>
+                             <li>E-mail: liquer@gmail.com</li>
+                             <li>Address:101- April Lane,Connecticut ,10021</li>
+                         </ul>
+            </div>
+            <div id="soc">
+                <p id="p1">Social media</p>
+              <a href="https://www.facebook.com"><img src="https://realtyna.com/wp-content/uploads/2018/06/facebook-slider-icon.png"></img></a>
+              <a href="https://twitter.com/"><img src="https://www.magfedpbuk.com/wp-content/uploads/2017/02/twitter-icon.png"></img></a>
+              <a href="https://www.instagram.com/?hl=en"><img src="https://static.getjar.com/icon-50x50/b4/935695_thm.png"></img></a>
+              <a href="https://www.pinterest.co.uk"><img src="https://www.milcahmekonnen.ca/wp-content/uploads/2017/11/pinterest-icon-vector-1.png"></img></a>
+              <a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"><img src="https://static.getjar.com/icon-50x50/1e/899841_thm.png"></img></a>
+            </div>
+            </div>
+            &copy Liquer
+        </footer>
+    </body>
+</html>
